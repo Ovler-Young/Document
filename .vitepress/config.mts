@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
-import { generateSidebar } from 'vitepress-sidebar';
-
+import { generateSidebar } from "vitepress-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,14 +11,17 @@ export default defineConfig({
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "EFB", link: "/efb" }
+			{ text: "EFB", link: "/efb" },
+			{ text: "Vocaloid", link: "/vocaloid" },
+			{ text: "STWP", link: "/stwp" },
 		],
 
-    sidebar: generateSidebar({
-      documentRootPath: '/docs',
-      collapsed: false,
-      capitalizeFirst: true
-    }),
+		sidebar: generateSidebar({
+			documentRootPath: "/docs",
+			collapsed: false,
+			capitalizeFirst: true,
+			includeFolderIndexFile: true,
+		}),
 
 		socialLinks: [
 			{ icon: "github", link: "https://github.com/Ovler-Young/Document" },
