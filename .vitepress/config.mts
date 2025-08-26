@@ -14,6 +14,7 @@ export default defineConfig({
 			{ text: "EFB", link: "/efb" },
 			{ text: "Vocaloid", link: "/vocaloid" },
 			{ text: "STWP", link: "/stwp" },
+			{ text: "Others", link: "/others" }
 		],
 
 		sidebar: generateSidebar({

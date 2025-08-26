@@ -19,4 +19,7 @@ features:
   - title: STWP
     details: 参与 STWP 项目，主要包括Biliarchive，以及Islandarchive
     link: /stwp
+  - title: Others
+    details: 其他的杂七杂八
+    link: /others
 ---
