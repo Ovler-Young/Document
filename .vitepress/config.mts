@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress";
+import { generateSidebar } from 'vitepress-sidebar';
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,18 +12,14 @@ export default defineConfig({
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Examples", link: "/markdown-examples" },
+			{ text: "EFB", link: "/efb" }
 		],
 
-		sidebar: [
-			{
-				text: "Examples",
-				items: [
-					{ text: "Markdown Examples", link: "/markdown-examples" },
-					{ text: "Runtime API Examples", link: "/api-examples" },
-				],
-			},
-		],
+    sidebar: generateSidebar({
+      documentRootPath: '/docs',
+      collapsed: false,
+      capitalizeFirst: true
+    }),
 
 		socialLinks: [
 			{ icon: "github", link: "https://github.com/Ovler-Young/Document" },

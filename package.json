@@ -4,7 +4,8 @@
 	"homepage": "https://document.180811.xyz/",
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.2",
-		"vitepress": "2.0.0-alpha.12"
+		"vitepress": "2.0.0-alpha.12",
+		"vitepress-sidebar": "^1.33.0"
 	},
 	"scripts": {
 		"dev": "vitepress dev",
