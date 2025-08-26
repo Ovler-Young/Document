@@ -10,7 +10,7 @@
 		"dev": "vitepress dev",
 		"build": "vitepress build",
 		"preview": "vitepress preview",
-		"lint": "biome lint --write --changed --since=master",
-		"format": "biome format --write --changed --since=master"
+		"lint": "biome lint --write",
+		"format": "biome format --write"
 	}
 }
