@@ -1,16 +1,16 @@
 {
-  "name": "Ovler document",
-  "version": "0.0.1",
-  "homepage": "https://document.180811.xyz/",
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.2",
-    "vitepress": "2.0.0-alpha.12"
-  },
-  "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview",
-    "lint": "biome lint --write",
-    "format": "biome format --write"
-  }
+	"name": "Ovler document",
+	"version": "0.0.1",
+	"homepage": "https://document.180811.xyz/",
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.2",
+		"vitepress": "2.0.0-alpha.12"
+	},
+	"scripts": {
+		"dev": "vitepress dev",
+		"build": "vitepress build",
+		"preview": "vitepress preview",
+		"lint": "biome lint --write --changed --since=master",
+		"format": "biome format --write --changed --since=master"
+	}
 }
